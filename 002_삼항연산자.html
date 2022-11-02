@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼항연산자</title>
+</head>
+<body>
+    <select>
+      <option value="foot" selected>축구</option>
+      <option value="base">야구</option>
+      <option value="basket">농구</option>
+    </select>
+    <button>PICK</button>
+
+
+    <script>
+      //삼항연산자 구문
+      // 조건식 ? 참일경우의결과 : 거짓일경우의 결과
+      //ex) 3>2 ? "참" : "거짓"
+      const select = document.querySelector('select')
+      const button = document.querySelector('button')
+
+      button.addEventListener('click',()=>{
+        console.log(select.value)
+        let result;
+        result = select.value =="foot" ?
+        "축구를 선택했네요!":
+        "축구를 선택하지 않았네요!"
+        alert(result)
+      })
+    </script>
+</body>
+</html>

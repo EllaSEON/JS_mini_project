@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+</head>
+<body>
+    <script>
+    //유저가 접속하면 접속한지 얼마나 지났는지 보여주는 함수
+      let num = 0;
+
+      function showTimeout(){
+        console.log(`안녕하세요. 접속하신지 ${num++}초가 지났습니다`)
+        if(num>5){
+        clearInterval(tId);
+        }
+      }
+      
+      // 1초에 한번씩 메세지가 나옴, 함수 실행문은 변수에 담아도 함수가 실행되는구나...
+      const tId = setInterval(showTimeout,1000)
+
+      //계속 보여주긴 싫고 5초동안만 메세지가 나오게 하고 싶어
+
+
+    
+
+    
+    </script>
+</body>
+</html>
