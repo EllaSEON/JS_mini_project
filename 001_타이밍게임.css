@@ -48,6 +48,7 @@ body{
   border:none;
   margin-top:3rem;
   cursor:pointer;
+  color:#fff;
 }
 .loading{
   background:#ccc;
